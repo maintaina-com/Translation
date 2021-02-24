@@ -30,9 +30,6 @@
     "autoload": {
         "psr-0": {
             "Horde_Translation": "lib/"
-        },
-        "psr-4": {
-            "Horde\\Translation\\": "src/"
         }
     }
 }
