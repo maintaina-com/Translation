@@ -6,11 +6,13 @@
  * @package    Translation
  * @subpackage UnitTests
  */
-class Horde_Translation_TestBase extends PHPUnit_Framework_TestCase
+use \PHPUnit\Framework\TestCase;
+
+class Horde_Translation_TestBase extends TestCase
 {
     private $_env;
 
-    public function setUp()
+    public function setUp(): void
     {
         try {
             $this->setLocale(LC_ALL, 'de_DE.UTF-8');
@@ -20,7 +22,7 @@ class Horde_Translation_TestBase extends PHPUnit_Framework_TestCase
         $this->_setEnv('de_DE.UTF-8');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->_restoreEnv();
     }
