@@ -6,7 +6,11 @@
  * @package    Translation
  * @subpackage UnitTests
  */
-class Horde_Translation_WrapperTest extends Horde_Translation_TestBase
+namespace Horde\Translation;
+use Horde_Translation_TestBase;
+use Horde_Translation;
+
+class WrapperTest extends Horde_Translation_TestBase
 {
     public function testWrappers()
     {
