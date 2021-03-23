@@ -6,9 +6,10 @@
  * @package    Translation
  * @subpackage UnitTests
  */
+namespace Horde\Translation;
 use \PHPUnit\Framework\TestCase;
 
-class Horde_Translation_TestBase extends TestCase
+class TestBase extends TestCase
 {
     private $_env;
 

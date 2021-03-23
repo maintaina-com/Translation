@@ -7,12 +7,11 @@
  * @subpackage UnitTests
  */
 namespace Horde\Translation;
-use \Horde_Translation_TestBase;
 use \Horde_Translation_Source_TestAutodetect;
 use \Horde_Translation_Pear_TestAutodetect;
 use \Horde_Translation_Composer_TestAutodetect;
 
-class AutodetectTest extends Horde_Translation_TestBase
+class AutodetectTest extends TestBase
 {
     public function testAutodetectSource()
     {

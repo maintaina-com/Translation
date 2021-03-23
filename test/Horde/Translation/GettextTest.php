@@ -7,10 +7,9 @@
  * @subpackage UnitTests
  */
 namespace Horde\Translation;
-use Horde_Translation_TestBase;
 use Horde_Translation_Handler_Gettext;
 
-class GettextTest extends Horde_Translation_TestBase
+class GettextTest extends TestBase
 {
     private $_dict;
     private $_otherDict;
