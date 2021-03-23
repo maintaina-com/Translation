@@ -8,6 +8,7 @@
  */
 namespace Horde\Translation;
 use \PHPUnit\Framework\TestCase;
+use \PHPUnit\Framework\Exception as PHPUnitException;
 
 class TestBase extends TestCase
 {
@@ -17,7 +18,7 @@ class TestBase extends TestCase
     {
         try {
             $this->setLocale(LC_ALL, 'de_DE.UTF-8');
-        } catch (PHPUnit_Framework_Exception $e) {
+        } catch (PHPUnitException $e) {
             $this->markTestSkipped('Setting the locale failed. de_DE.UTF-8 might not be supported.');
         }
         $this->_setEnv('de_DE.UTF-8');
